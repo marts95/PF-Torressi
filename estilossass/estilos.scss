@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+/*font-family: 'Roboto Condensed', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/*font-family: 'Lobster', cursive;*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*Header general para todos las páginas*/
+header{
+    background-color: #3d3d3d;
+    width: 100%;
+    font-size: 30px;
+    color: #ffffff;
+    height: 100px;
+    .logo{
+        display: flex;
+        float: left;
+        padding: 5px;
+    }
+    .barra{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0.5rem;
+        font-family: 'Lobster', cursive;
+        li{
+            list-style: none;
+            display: inline-block;
+            padding: 1rem;
+            a{
+                text-decoration: none;
+                color: #ffffff;
+            }
+            a:hover{
+                color: #c17767;
+            }
+        }
+    }
+    .hamburguesa{
+        display: none;
+    }
+}
+/*Final de header general*/
+/*main del inicio*/
+#carru2{
+    display: none;
+}
+#carru3{
+    display: none;
+}
+.frase{
+    color: #c17767;
+    font-size: 40px;
+    background-color: #3d3d3d;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.conocer{
+    background-color: #c17767;
+    color: #d9d9db;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/*Final del main página Inicio*/
+/*Footer general de todas las páginas*/
+footer{
+    background-color: #3d3d3d;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+        p{
+            margin-bottom: 10px;
+        }
+        i{
+            font-size: 30px;
+            letter-spacing: 10px;
+            color: #d9d9db;
+        }
+}
+/*Fin del footer general*/
+/*Flecha arriba*/
+.subir{
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    background-color: #3d3d3d;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+    font-weight: 1000;
+}
+/*Fin flecha arriba*/
+
+/*Main de productos*/
+.card{
+    background-color: #d9d9db;
+    font-family: 'Roboto Condensed', sans-serif;
+    h5{
+        color: #c17767;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    p{
+        font-size: 17px;
+    }
+}
+/*fin de main de productos*/
+/*Main de contacto*/
+.contacto{
+    display: flex;
+    font-family: 'Roboto Condensed', sans-serif;
+    gap: 1rem;
+    padding-right: 1rem;
+    padding-block: 4.2rem;
+    background-color: #ddd2cf;
+    font-size: 17px;
+    font-weight: 550;
+    img{
+        width: 50%;
+        height: auto;
+    }
+    p{
+        font-size: 30px;
+        font-family: 'Lobster', cursive;
+        color: #c17767;
+    }
+    .btn{
+        background: #c17767;
+        color: #d9d9db;
+        font-weight: 500;
+    }
+}
+/*Fin de main contacto*/
+/*Main de nosotros*/
+.nosotros{
+    background-color: #ddd2cf;
+    display: flex;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-right: 2rem;
+    gap: 3rem;
+    padding-block: 4.2rem;
+    img{
+        width: 50%;
+    }
+    .historia{
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+    .titulo{
+        color: #c17767;
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .cuerpo{
+        padding-top: 2rem;
+        font-size: 18px;
+        text-align: justify;
+    }
+}
+/*Fin de main de nosotros*/
+/*Main de reseñas*/
+.main-res{
+    background-color: #ddd2cf;
+    .frase-resena{
+        font-family: 'Lobster', cursive;
+        text-align: center;
+        padding-top: 5rem;
+        color: #c17767;
+    }
+    .resenas{
+        display: grid;
+        grid-template-rows: 1frgit ;
+        padding-block: 8rem;
+        padding-inline: 10rem;
+        gap: 8rem;
+        font-family: 'Roboto Condensed', sans-serif;
+        .resena{
+        font-size: 18px;
+        text-align: justify;
+            h5{
+                text-align: center;
+                font-weight: 700;
+                color: #3d3d3d;
+            }
+        }
+    }
+}
+/*Fin de main de reseñas*/
+/*Media queries*/
+@media screen and (max-width: 920px) {
+    /*headear*/
+    header{
+        height: 100px;
+        font-size: 25px;
+        a{
+            padding-top: 5px;
+            padding-left: 5px;
+            padding-right: 0;
+        }
+        nav{
+            margin: 0;
+            padding-left: 4rem;
+        }
+    }
+
+    /*Fin de header*/
+    /*main de inicio*/
+    #carru1 {
+        display: none;
+    }
+    #carru2{
+        display: flex;
+        .frase{
+            color: #c17767;
+            font-size: 25px;
+            background-color: #3d3d3d;
+            font-family: 'Roboto Condensed', sans-serif;
+            text-align: center;
+        }
+        .conocer{
+            display: flex;
+            justify-content: center;
+            background-color: #c17767;
+            color: #d9d9db;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+    }
+    /*fin de main inicio*/
+    /*Nosotros*/
+    .nosotros{
+        display: flex;
+        flex-direction: column;
+        padding-inline: 1rem;
+        padding-block: 1rem;
+        img{
+        width: 100%;
+        }
+    }
+    /*Reseñas*/
+    .frase-resena{
+        padding-top: 1rem;
+    }
+    .resenas{
+        display: flex;
+        flex-direction: column;
+    }
+    /*Fin de reseñas*/
+    /*Contacto*/
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        padding-inline: 1rem;
+        padding-block: 1rem;
+        img{
+            width: 100%;
+        }
+        form{
+            p{
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 710px) {
+    /*Menu hamburguesa*/
+    header{
+        .encabezado{
+            display: none;
+        }
+        .hamburguesa{
+        display: flex;
+            .navbar{
+                background-color: #3d3d3d;
+            }
+            .offcanvas{
+                background-color: #3d3d3d;
+                .offcanvas-title{
+                    color: #c17767;
+                    font-size: 30px;
+                }
+                .nav-link{
+                    color: #d9d9db;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    
+    /*Fin de menú hamburguesa*/
+}
