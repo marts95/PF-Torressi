@@ -88,10 +88,10 @@ footer {
   text-align: center;
   text-decoration: none;
 }
-footer p {
+footer .redes p {
   margin-bottom: 10px;
 }
-footer i {
+footer .redes i {
   font-size: 30px;
   letter-spacing: 10px;
   color: #d9d9db;
@@ -235,6 +235,7 @@ footer i {
   }
   #carru2 {
     display: flex;
+    background-color: #eec8c8;
   }
   #carru2 .frase {
     color: #c17767;

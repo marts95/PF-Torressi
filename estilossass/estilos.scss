@@ -79,6 +79,7 @@ footer{
     padding: 20px;
     text-align: center;
     text-decoration: none;
+    .redes{
         p{
             margin-bottom: 10px;
         }
@@ -87,6 +88,7 @@ footer{
             letter-spacing: 10px;
             color: #d9d9db;
         }
+    }
 }
 /*Fin del footer general*/
 /*Flecha arriba*/
@@ -222,6 +224,7 @@ footer{
     }
     #carru2{
         display: flex;
+        background-color: #eec8c8;
         .frase{
             color: #c17767;
             font-size: 25px;
